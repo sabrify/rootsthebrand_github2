@@ -1,0 +1,101 @@
+
+/* in case of conflicts or overriding other sections use id with class */
+.newsletter__wrapper{
+    background-color: #F9F2E7;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between   ;
+}
+.email-button{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    height: 100%;
+    align-items: end;
+    justify-content: center;
+    
+}
+.newsletter-form .field::after {
+    border-radius: 4px;
+    color: #241E19;
+
+  }
+  .newsletter-form .field__input{
+    font-family: "Geist_Regular" !important;
+    border-radius: 4px;
+    background-color: transparent !important;
+
+  }
+
+  
+
+
+.heading-subheading{
+ text-align: start;
+}
+.newsletter-form{
+width: 100%;
+}
+.newsletter-form__field-wrapper .field__input {
+  padding-right: 4rem;
+
+}
+.email-button .button{
+    max-width: 100%;
+}
+.email-button-text{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 0;
+    margin: 0;
+    gap: 16px
+}
+.email-subtext{
+    
+    text-align: start;
+    font-size: 12px;
+    line-height: 100%;
+    text-decoration: underline;
+  font-family: "Geist_Regular"
+}
+
+.heading-subheading h2{
+    font-size: 48px;
+    line-height: 130%;
+    font-weight: 600;
+    color: #241E19;
+    max-width: 30ch;
+    white-space:normal;
+    word-wrap: break-word;
+}
+.heading-subheading .newsletter__subheading{
+    font-size: 18px;
+  margin: 0;
+}
+@media screen and (max-width: 990px) {
+    .heading-subheading{
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    text-align: start;
+    }
+    .newsletter__wrapper, .email-button{
+        flex-direction: column;
+    }
+    .email-button-text{
+        margin-top: 8px;
+        align-items: center;
+      width: 100%
+    }
+    .email-button, {
+        flex-direction: column;
+        align-items: center;
+      box-sizing: border-box;
+        margin: 0;
+    }
+    .email-button .button{
+        width: 100%;
+    }
+}

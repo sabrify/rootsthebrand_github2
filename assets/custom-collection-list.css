@@ -1,0 +1,138 @@
+/* this code is for the first collection list -Made in Morocco- -The right bag- -Organized- -Work? travel?- */
+
+
+/* Common styles for all breakpoints */
+.card--media .card__inner .card__content {
+    position: relative; /* Make the image container the reference point for positioning */
+}
+.card__inner, .card__media{
+  border-radius: 4px !important;
+}
+.card__heading a.full-unstyled-link {
+    position: absolute;
+    top: 80%; /* Position the card on the bottom */
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: start;
+    z-index: 1;
+
+    line-height: 150%;
+}
+
+.card .get-it {
+    text-align: start;
+    font-family: "Geist_Regular";
+    font-size: 14px;
+    line-height: 150%;
+}
+
+/* Desktop */
+@media screen and (min-width: 988px) {
+    .card__heading a.full-unstyled-link {
+        min-width: 180px;
+        left: 45%; /* Positioning adjustments */
+        font-size: 20px;
+    }
+
+    /* Prevent word breaks for .get-it class */
+    #Slider-template--18096157163751__collection_list_AXhxTd .card__heading a.full-unstyled-link .get-it {
+        white-space: nowrap; /* Add word break prevention */
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 751px) and (max-width: 987px) {
+    .card__heading a.full-unstyled-link {
+        min-width: 209.85px;
+        left: 35%;
+        padding: 10px;
+        font-size: 42px;
+        /* font-weight: 600; */
+        margin-top: 10px;
+    }
+}
+
+/* Mobile (401px to 750px) */
+@media screen and (min-width: 401px) and (max-width: 750px) {
+    .card__heading a.full-unstyled-link {
+        min-width: 255.06px;
+        left: 35%;
+        padding: 10px;
+        font-size: 30px;
+        /* font-weight: 600; */
+        margin-top: 10px;
+    }
+}
+
+/* Small Mobile (up to 400px) */
+@media screen and (max-width: 400px) {
+    .card__heading a.full-unstyled-link {
+        min-width: 209.85px;
+        top: 83%;
+        left: 32% !important;
+        padding: 0 10px;
+        font-family: "FreightDispPro_Bold" !important;
+        font-size: 24px;
+        /* font-weight: 600; */
+    }
+}
+
+/* this code is for the second collection list -Business briefcase- -Travel luggage- */
+/* using template ids to prevent the code from being overridden */
+
+
+    #Slider-template--18106372194535__collection_list_AXhxTd .card__heading a.full-unstyled-link  {
+    position: absolute;
+    min-width: 60%;
+    top: 70%; /* Position the card on the bottom */
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: start;
+    font-size: 48px;
+    z-index: 1;
+    line-height: 100%;
+}
+
+/* Tablet */
+@media screen and (min-width: 751px) and (max-width: 987px) {
+    #Slider-template--18106372194535__collection_list_AXhxTd .card__heading a.full-unstyled-link  {
+        min-width: 209.85px;
+      /* min-width: 50%; */
+      left: 30%;
+      padding: 10px;
+      font-size: 42px;
+      /* font-weight: 600; */
+      margin-top: 10px;
+      line-height: 100%;
+      font-family: "FreightDispProBold_Regular" !important;
+
+    }
+}
+/* Mobile (401px to 750px) */
+@media screen and (min-width: 401px) and (max-width: 750px) {
+    #Slider-template--18106372194535__collection_list_AXhxTd .card__heading a.full-unstyled-link  {
+        min-width: 255.06px;
+      /* min-width: 40%; */
+      left: 40%;
+      padding: 10px;
+      font-size: 40px;
+      /* font-weight: 600; */
+      margin-top: 10px;
+      line-height: 100%;
+      
+
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #Slider-template--18106372194535__collection_list_AXhxTd .card__heading a.full-unstyled-link {
+        min-width: 209.85px;
+      /* min-width: 60%; */
+      top: 60%;
+      left: 50% !important;
+      padding: 0 10px;
+      font-size: 40px;
+      /* font-weight: 600; */
+      line-height: 100%;
+    }
+}

@@ -1,0 +1,162 @@
+
+@media screen and (min-width: 1440px){
+.banner__content.banner__content--middle-center {
+    align-items: flex-end;
+    justify-content: space-between;
+    width: max-content;
+     margin-left: 4rem; /* Reduce left margin dynamically */
+    margin-right: 4rem; /* Reduce right margin dynamically */
+  
+}
+
+.banner__content{
+  padding: 5rem 1.5rem;
+  justify-content: center;
+  
+}
+  
+.banner__box{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+  .banner__heading {
+    grid-column: 1; /* Header in the first column */
+    font-size: 56px;
+     font-family: "FreightDispPro_Bold" !important;
+}
+  .banner_text_and_button {
+    grid-column: 2; /* Text and button in the second column */
+    align-items: start;
+    justify-self: end; /* Push text and button to the right */
+    margin-right: -700px;
+ 
+}
+   .banner_text_and_button .banner__text.rte.body p{
+      font-size: 18px;
+      /* font-family: "Geist_Regular" !important;
+      color: white; */
+      font-weight: 400 !important;
+      margin-bottom: 32px;
+ }
+      .button,
+.button::after {
+  outline: none;
+  border-radius: 4px;
+  font-family: "Geist_Medium" !important;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 150%;
+  color: #7E3D19;
+  
+  
+}
+  .banner__box{
+    text-align: start;
+  }
+}
+
+@media screen and (min-width: 990px) and (max-width: 1440px) {
+.banner__content.banner__content--middle-center {
+    align-items: flex-end;
+    justify-content: space-between;
+    width: max-content;
+     margin-left: 4rem; /* Reduce left margin dynamically */
+    margin-right: 4rem; /* Reduce right margin dynamically */
+  
+}
+
+.banner__content{
+  padding: 5rem 1.5rem;
+  justify-content: center;
+  
+}
+  
+.banner__box{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+  .banner__heading {
+    grid-column: 1; /* Header in the first column */
+    font-size: 56px;
+    font-family: "FreightDispPro_Bold" !important;
+}
+ .banner__text p{
+   font-size: 18px;
+   color: white;
+   margin-bottom: 32px;
+  /* font-family: "Geist_Regular" !important; */
+  font-weight: 400;
+
+ }
+    .button,
+.button::after {
+  outline: none;
+  border-radius: 4px;
+  font-family: "Geist_Medium" !important;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: #7E3D19;
+  
+  
+}
+
+  .banner_text_and_button {
+    grid-column: 2; /* Text and button in the second column */
+    align-items: start;
+    justify-self: end; /* Push text and button to the right */
+    margin-right: clamp(-300px, 360px, -380px);
+ 
+}
+  .banner__box{
+    text-align: start;
+  }
+}
+
+/* mobile image header */
+@media screen and (max-width: 990px){
+
+  .banner__box{
+    display: block;
+    text-align:start;
+    width: 80%;
+    padding: 4rem 0rem;
+  }
+  .banner__heading{
+    margin-bottom: 80px;
+    max-width: 8ch;
+    white-space:normal;
+    word-wrap: break-word;
+    font-family: "FreightDispPro_Bold" !important;
+    font-size: 48px;
+    line-height: 120%;
+  }
+    .banner_text_and_button{
+    margin-top: 0;
+  }
+  .banner__text p{
+    margin-bottom: 32px !important;
+    max-width: 30ch;
+    white-space:normal;
+    word-wrap: break-word;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    color: white;
+    /* font-family: "Geist_Regular" !important; */
+  }
+
+.button,
+.button::after {
+  outline: none;
+  border-radius: 4px;
+  font-family: "Geist_Medium" !important;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 150%;
+  color: #7E3D19;
+  
+}
+}

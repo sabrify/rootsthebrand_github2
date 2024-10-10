@@ -1,0 +1,106 @@
+{
+  "name": "t:sections.footer.name",
+  "type": "footer",
+  "sections": {
+    "newsletter_xNYwqL": {
+      "type": "newsletter",
+      "blocks": {
+        "heading_FFqpap": {
+          "type": "heading",
+          "settings": {
+            "heading": "Subscribe to our emails",
+            "heading_size": "h1"
+          }
+        },
+        "paragraph_fJedcz": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Be the first to know about new collections and exclusive offers.<\/p>"
+          }
+        },
+        "email_form_UKnVYx": {
+          "type": "email_form",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "heading_FFqpap",
+        "paragraph_fJedcz",
+        "email_form_UKnVYx"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "image_xzM3zY": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/SxdtO2r0ajxAQSfdiEJ08Vdrp82dOsUkPeMiYh86_a7ff221a-6348-45cf-b7f0-cec71403c2e9.png",
+            "image_width": 50,
+            "alignment": ""
+          }
+        },
+        "text_XipT3N": {
+          "type": "text",
+          "settings": {
+            "heading": "Address:",
+            "subtext": "<p>Level 1, 12 Sample St, Sydney NSW 2000<\/p>"
+          }
+        },
+        "text_MPqrHG": {
+          "type": "text",
+          "settings": {
+            "heading": "Contact:",
+            "subtext": "<p><span style=\"text-decoration:underline\">+212 654-93075<\/span><\/p><p><span style=\"text-decoration:underline\">support@rootsthebrand.com<\/span><\/p>"
+          }
+        },
+        "link_list_Wz7qzj": {
+          "type": "link_list",
+          "settings": {
+            "heading": "",
+            "menu": "footer"
+          }
+        },
+        "brand_information_9qNq6z": {
+          "type": "brand_information",
+          "settings": {
+            "show_social": true
+          }
+        }
+      },
+      "block_order": [
+        "image_xzM3zY",
+        "text_XipT3N",
+        "text_MPqrHG",
+        "link_list_Wz7qzj",
+        "brand_information_9qNq6z"
+      ],
+      "settings": {
+        "color_scheme": "scheme-1",
+        "newsletter_enable": false,
+        "newsletter_heading": "",
+        "enable_follow_on_shop": true,
+        "show_social": false,
+        "enable_country_selector": true,
+        "enable_language_selector": true,
+        "payment_enable": true,
+        "show_policy": true,
+        "margin_top": 0,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "newsletter_xNYwqL",
+    "footer"
+  ]
+}

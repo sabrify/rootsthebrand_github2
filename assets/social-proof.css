@@ -1,0 +1,180 @@
+.collage-wrapper-title {
+  margin-top: 0;
+  margin-bottom: 3rem;
+  text-align: center;
+  color: #241E19;
+  font-family: 'FreightDispProBlack Regular' !important;
+  font-size: 48px;
+  line-height: 120%;
+  font-weight: 600;
+}
+.collage-caption{
+    text-align: center;
+  color: #241E19;
+}
+.collage-caption span{
+  color: #7E3D19;
+}
+.collage {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  grid-column-gap: var(--grid-desktop-horizontal-spacing);
+  grid-row-gap: var(--grid-desktop-vertical-spacing);
+  max-width: 100vw; /* Prevents overflow */
+  justify-content: center; /* Align the grid to the center */
+  margin: 0 auto; /* Center the collage */
+  
+}
+
+
+/* Desktop Layout: 1200px and above */
+@media screen and (min-width: 1200px) {
+  .collage {
+    grid-template-columns: 360px 360px 360px; /* 3 columns */
+    justify-content: center; /* Align the grid to the center */
+    margin: 0 auto; /* Center the collage */
+  }
+
+  /* First image: square */
+  .collage__item:nth-child(1),
+  .collage__item:nth-child(3),
+  .collage__item:nth-child(4),
+  .collage__item:nth-child(6),
+  .collage__item:nth-child(7) {
+    width: 360px;
+    height: 360px; /* Maintain square ratio */
+  }
+
+  /* Second image: Rectangular (16:9 aspect ratio) */
+  .collage__item:nth-child(2) {
+    width:  360px;
+    height: calc( 360px * 9 / 16); /* Maintain 16:9 ratio */
+  }
+
+    /* Fifth image: Rectangular (16:9 aspect ratio) */
+  .collage__item:nth-child(5) {
+    width:  360px;
+    height: calc( 360px * 9 / 16); /* Maintain 16:9 ratio */
+    margin-top: -140px; /* Shifted upwards */
+  }
+
+  /* Fix for the 7th image: correct positioning */
+  .collage__item:nth-child(7) {
+    grid-column: 2; /* Middle column */
+    grid-row: 3; /* Correct row placement */
+     margin-top: -280px; /* Shift upwards */
+  }
+}
+
+/* Desktop Layout: 990px to 1200px */
+@media screen and (min-width: 990px) and (max-width: 1200px) {
+  .collage {
+    grid-template-columns: 300px 300px 300px; /* Reduced width */
+    grid-column-gap: 8px; /* Adjust gap */
+    margin: 0 auto; /* Center the collage */
+    justify-content: center; /* Align the grid to the center */
+  }
+
+  /* First, third, fourth, sixth, and seventh images: square */
+  .collage__item:nth-child(1),
+  .collage__item:nth-child(3),
+  .collage__item:nth-child(4),
+  .collage__item:nth-child(6),
+  .collage__item:nth-child(7) {
+    width: 300px;
+    height: 300px; /* Maintain square ratio */
+  }
+
+  /* Second image: Rectangular (16:9 aspect ratio) */
+  .collage__item:nth-child(2) {
+    width: 300px;
+    height: calc(300px * 9 / 16); /* Maintain 16:9 ratio */
+  }
+
+    /* Fifth image: Rectangular (16:9 aspect ratio) */
+  .collage__item:nth-child(5) {
+    width: 300px;
+    height: calc(300px * 9 / 16); /* Maintain 16:9 ratio */
+    margin-top: -100px; /* Shifted upwards */
+  }
+
+
+  /* Fix for the 7th image: correct positioning */
+  .collage__item:nth-child(7) {
+    grid-column: 2; /* Middle column */
+    grid-row: 3; /* Correct row placement */
+    margin-top: -200px; /* Shift upwards */
+  }
+}
+
+/* Mobile Layout: below 990px */
+@media screen and (max-width: 990px) {
+  .collage {
+    grid-template-columns: 1fr; /* Stacked layout on mobile */
+    grid-column-gap: var(--grid-mobile-horizontal-spacing);
+    grid-row-gap: var(--grid-mobile-vertical-spacing);
+    margin: 0 auto; /* Center the collage */
+  }
+
+  /* All images: stack in one column */
+  .collage__item {
+    grid-column: span 1;
+    width: 285px; /* Mobile width */
+    margin: 0 auto; /* Center the images */
+  }
+
+  /* First, third, fourth, sixth, and seventh images: square */
+  .collage__item:nth-child(1),
+  .collage__item:nth-child(3),
+  .collage__item:nth-child(4),
+  .collage__item:nth-child(6),
+  .collage__item:nth-child(7) {
+    height: 285px; /* Square ratio */
+  }
+
+  /* Second and fifth images: rectangular */
+  .collage__item:nth-child(2),
+  .collage__item:nth-child(5) {
+    height: calc(285px * 9 / 16); /* 16:9 ratio */
+  }
+
+  /* Reset margin on mobile */
+  .collage__item:nth-child(5),
+  .collage__item:nth-child(7) {
+    margin-top: 0;
+  }
+}
+
+/* Image Styling */
+.collage__item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures images fit the defined area without stretching */
+}
+
+.collage-card {
+  height: 100%;
+  position: relative;
+  border-radius: var(--border-radius);
+  border: var(--border-width) solid rgba(var(--color-foreground), var(--border-opacity));
+  padding: var(--image-padding);
+}
+
+.collage-card .media {
+  height: 100%;
+  overflow: hidden;
+  border-radius: calc(var(--border-radius) - var(--border-width) - var(--image-padding));
+}
+
+.collage-card:after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-horizontal-offset) var(--shadow-vertical-offset) var(--shadow-blur-radius)
+    rgba(var(--color-shadow), var(--shadow-opacity));
+  width: calc(var(--border-width) * 2 + 100%);
+  height: calc(var(--border-width) * 2 + 100%);
+  top: calc(var(--border-width) * -1);
+  left: calc(var(--border-width) * -1);
+}

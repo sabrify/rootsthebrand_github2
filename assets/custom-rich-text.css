@@ -1,0 +1,42 @@
+.rich-text__blocks p{
+  color: #241E19 ;
+  font-size: 16px;
+  font-weight: 400;
+  line-height:150%;
+  /* font-family: "Geist_Regular" !important; */
+}
+
+.rich-text__heading.rte.inline-richtext.h1.scroll-trigger.animate--slide-in h2{
+    font-family: "FreightDispProBold_Regular" !important ;
+    font-size: 48px ;
+    line-height: 120%;
+  }
+
+.rich-text__caption.subtitle.subtitle--medium.scroll-trigger.animate--slide-in{
+  /* font-family: "Geist_SemiBold" !important; */
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+@media screen and (max-width: 990px){
+.rich-text__blocks p{
+  color: #241E19 ;
+  font-size: 16px;
+  font-weight: 400;
+  line-height:150%;
+  /* font-family: "Geist_Regular" !important; */
+}
+ .rich-text__heading.rte.inline-richtext.h1.scroll-trigger.animate--slide-in h2{
+    font-family: "FreightDispProBold_Regular" !important ;
+    font-size: 40px ;
+    line-height: 120%;
+  } 
+.rich-text__caption.subtitle.subtitle--medium.scroll-trigger.animate--slide-in{
+  /* font-family: "Geist_SemiBold" !important; */
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 150%;
+}
+
+}

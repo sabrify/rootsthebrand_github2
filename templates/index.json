@@ -1,0 +1,387 @@
+{
+  "sections": {
+    "image_banner": {
+      "type": "image-banner",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Made to last.",
+            "heading_size": "h0"
+          }
+        },
+        "text_Gct8Gz": {
+          "type": "text",
+          "settings": {
+            "text": "Introducing our high-quality, handcrafted leather goods.",
+            "text_style": "body"
+          }
+        },
+        "button": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Shop our products",
+            "button_link_1": "shopify:\/\/collections\/all",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text_Gct8Gz",
+        "button"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Elegant_Tan_Leather_Handbag_cc55311e-2710-42f0-90a1-80dafd28ea53.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "scheme-3",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": false,
+        "show_text_below": false
+      }
+    },
+    "rich_text_wRPkbx": {
+      "type": "rich-text",
+      "blocks": {
+        "caption_zY6JGe": {
+          "type": "caption",
+          "settings": {
+            "caption": "High quality, functional products",
+            "text_style": "subtitle",
+            "text_size": "medium"
+          }
+        },
+        "heading_HRWcVD": {
+          "type": "heading",
+          "settings": {
+            "heading": "Get Inspired",
+            "heading_size": "h1"
+          }
+        },
+        "text_GymWkU": {
+          "type": "text",
+          "settings": {
+            "text": "<p> Our products are designed to reflect our unique perspective and style, making the little things better, and we won't stop until we get it right. We combine incredible craftsmanship, a touch of heart and the finest materials.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "caption_zY6JGe",
+        "heading_HRWcVD",
+        "text_GymWkU"
+      ],
+      "custom_css": [
+
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "collection_list_CFpr6q": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_FUtCF3": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "made-in-morocco"
+          }
+        },
+        "featured_collection_QybUCf": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "the-right-bag"
+          }
+        },
+        "featured_collection_AfGzBw": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "organized"
+          }
+        },
+        "featured_collection_KyaYrQ": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "work-travel"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_FUtCF3",
+        "featured_collection_QybUCf",
+        "featured_collection_AfGzBw",
+        "featured_collection_KyaYrQ"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_ratio": "portrait",
+        "columns_desktop": 4,
+        "color_scheme": "",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_dUNTxR": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_xtPmtX": {
+          "type": "heading",
+          "settings": {
+            "heading": "100% vegan and handcrafted",
+            "heading_size": "h1"
+          }
+        },
+        "text_dCVUmf": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Each of our products is handcrafted to last a lifetime and distinctly unique, with no two products being the same.  One by one, every single piece in our collection is 100% hand-stitched by real artisans using marine-grade polyester, and the highest quality leather: <\/p>",
+            "text_style": "body"
+          }
+        },
+        "button_T9YQt7": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop our products",
+            "button_link": "shopify:\/\/products\/vegan-leather-bag",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_xtPmtX",
+        "text_dCVUmf",
+        "button_T9YQt7"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Elegant_Tan_Leather_Handbag_cc55311e-2710-42f0-90a1-80dafd28ea53.jpg",
+        "height": "adapt",
+        "desktop_image_width": "small",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "collection_list_AXhxTd": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_VDRm4B": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "business-briefcases"
+          }
+        },
+        "featured_collection_4PNxJm": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "travel-luggage"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_VDRm4B",
+        "featured_collection_4PNxJm"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 2,
+        "color_scheme": "",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_7wCacy": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_E7ECMQ": {
+          "type": "heading",
+          "settings": {
+            "heading": "More than just an accessory",
+            "heading_size": "h1"
+          }
+        },
+        "text_9anfbH": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "button_3xg77H": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop our products",
+            "button_link": "shopify:\/\/collections\/all",
+            "button_style_secondary": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_E7ECMQ",
+        "text_9anfbH",
+        "button_3xg77H"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/pexels-taken-by-great-1293037072-27893079.jpg",
+        "height": "adapt",
+        "desktop_image_width": "small",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "social_proof_B9MF9n": {
+      "type": "social-proof",
+      "blocks": {
+        "image_tY6Yng": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Elegant_Beige_Leather_Folder_in_Hand.jpg",
+            "alt_text": "Add a description for accessibility and SEO"
+          }
+        },
+        "image_Vezbpx": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Luxurious_Leather_Handbag.jpg",
+            "alt_text": "Add a description for accessibility and SEO"
+          }
+        },
+        "image_9RWefT": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Bag.png",
+            "alt_text": "Add a description for accessibility and SEO"
+          }
+        },
+        "image_cgJXGe": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Elegant_Tan_Leather_Handbag_cc55311e-2710-42f0-90a1-80dafd28ea53.jpg",
+            "alt_text": "Add a description for accessibility and SEO"
+          }
+        },
+        "image_Pdj4gR": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Luxurious_Black_Leather_Bag_on_Podium.jpg",
+            "alt_text": "Add a description for accessibility and SEO"
+          }
+        },
+        "image_UKGEyB": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/FQh8KElyeYBm96NhSjIVMur5pegIec2RgEMZwqmK_lg.png",
+            "alt_text": "Add a description for accessibility and SEO"
+          }
+        },
+        "image_iLMYFk": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Detailed_View_of_Leather_Cardholder.jpg",
+            "alt_text": "Add a description for accessibility and SEO"
+          }
+        }
+      },
+      "block_order": [
+        "image_tY6Yng",
+        "image_Vezbpx",
+        "image_9RWefT",
+        "image_cgJXGe",
+        "image_Pdj4gR",
+        "image_UKGEyB",
+        "image_iLMYFk"
+      ],
+      "settings": {
+        "heading": "Show us how you do it",
+        "heading_size": "h2",
+        "caption": "find us at",
+        "caption2": "@rootsthebrand",
+        "desktop_layout": "left",
+        "mobile_layout": "collage",
+        "card_styles": "none",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "newsletter_9TGDHb": {
+      "type": "newsletter",
+      "blocks": {
+        "heading_kw4FBc": {
+          "type": "heading",
+          "settings": {
+            "heading": "Don’t miss out on new releases & subscriber exclusives.",
+            "heading_size": "h1"
+          }
+        },
+        "paragraph_9iK8KT": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>News and inspiration in your inbox, every week. Subscribe to get all the goodies.<\/p>"
+          }
+        },
+        "email_form_MjHGk3": {
+          "type": "email_form",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "heading_kw4FBc",
+        "paragraph_9iK8KT",
+        "email_form_MjHGk3"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "image_banner",
+    "rich_text_wRPkbx",
+    "collection_list_CFpr6q",
+    "image_with_text_dUNTxR",
+    "collection_list_AXhxTd",
+    "image_with_text_7wCacy",
+    "social_proof_B9MF9n",
+    "newsletter_9TGDHb"
+  ]
+}

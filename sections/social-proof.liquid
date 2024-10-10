@@ -1,0 +1,189 @@
+{{ 'social-proof.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<div class="color-{{ section.settings.color_scheme }} gradient isolate">
+  <div class="page-width section-{{ section.id }}-padding">
+    {%- if section.settings.heading != blank -%}
+      <h2 class="collage-wrapper-title inline-richtext {{ section.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+        {{ section.settings.heading }}
+      </h2>
+    {%- endif -%}
+    
+    {%- if section.settings.caption != blank -%}
+      <p class="collage-caption">
+        {{ section.settings.caption }}
+        <span class="collage-caption">
+        {{ section.settings.caption2 }}
+      </span>
+      </p>
+    {%- endif -%}
+    
+    <div class="collage{% if section.settings.mobile_layout == 'collage' %} collage--mobile{% endif %}">
+      {%- for block in section.blocks -%}
+        <div
+          class="collage__item collage__item--image collage__item--{{ section.settings.desktop_layout }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+          {{ block.shopify_attributes }}
+          {% if settings.animations_reveal_on_scroll %}
+            data-cascade
+            style="--animation-order: {{ forloop.index }};"
+          {% endif %}
+        >
+          <div class="collage-card {% if section.settings.card_styles == 'none' %}global-media-settings{% else %}card-wrapper {{ section.settings.card_styles }} color-{{ settings.card_color_scheme }} gradient{% endif %}">
+            <div
+              class="media media--transparent ratio"
+              {% if block.settings.image != blank %}
+                style="--ratio-percent: {{ 1 | divided_by: block.settings.image.aspect_ratio | times: 100 }}%"
+              {% else %}
+                style="--ratio-percent: 100%"
+              {% endif %}
+            >
+              {%- if block.settings.image != blank -%}
+                {{
+                  block.settings.image
+                  | image_url: width: 3200
+                  | image_tag:
+                    sizes: '(min-width: 750px) calc(100vw - 30px), calc(100vw - 30px)',
+                    widths: '50, 75, 100, 150, 200, 300, 400, 500, 750, 1000, 1250, 1500, 1750, 2000, 2250, 2500, 2750, 3000, 3200',
+                    alt: block.settings.alt_text,
+                    loading: 'lazy'
+                }}
+              {%- else -%}
+                {{ 'placeholder' | placeholder_svg_tag: 'placeholder-svg' }}
+              {%- endif -%}
+            </div>
+          </div>
+        </div>
+      {%- endfor -%}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Collage Section",
+  "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Social Proof Section"
+    },
+    {
+      "type": "select",
+      "id": "heading_size",
+      "label": "Heading Size",
+      "default": "h2",
+      "options": [
+        { "value": "h2", "label": "Medium (h2)" },
+        { "value": "h1", "label": "Large (h1)" }
+      ]
+    },
+     {
+      "type": "text",
+      "id": "caption",
+      "label": "Caption",
+      "default": "This is the caption text that will appear below the title."
+    },
+        {
+      "type": "text",
+      "id": "caption2",
+      "label": "Caption2",
+      "default": "This is the 2nd caption text that will appear below the title."
+    },
+    {
+      "type": "select",
+      "id": "desktop_layout",
+      "label": "Desktop Layout",
+      "default": "left",
+      "options": [
+        { "value": "left", "label": "Left Aligned" },
+        { "value": "right", "label": "Right Aligned" }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "mobile_layout",
+      "label": "Mobile Layout",
+      "default": "collage",
+      "options": [
+        { "value": "collage", "label": "Collage" },
+        { "value": "column", "label": "Column" }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "card_styles",
+      "label": "Card Styles",
+      "default": "none",
+      "options": [
+        { "value": "none", "label": "No Styles" },
+        { "value": "card-wrapper", "label": "Card Wrapper" }
+      ]
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "Color Scheme",
+      "default": "scheme-1"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Top Padding",
+      "default": 36,
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Bottom Padding",
+      "default": 36,
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "name": "Image",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "alt_text",
+          "label": "Alt Text",
+          "default": "social proof images"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Social Proof Collage",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}
